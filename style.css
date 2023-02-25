@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.container {
+    width: 100%;
+    max-width: 440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 30px 20px;*/
+
+    border: 2px solid transparent;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(white, white),
+    linear-gradient(to right, #d51c39, #c514a6, #8052ec);
+    background-origin: border-box;
+    border-radius: 20px;
+}
+
+#new-task,
+#tasks {
+    margin: 2rem 1.5rem;
+
+}
+
+#new-task {
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #efefef, #ededed);
+}
+
+#new-task input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 1px;
+    font-size: 17px;
+    outline: none;
+}
+
+#new-task input:hover,
+#new-task input:focus {
+    border: 1px solid transparent;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(white, white),
+    linear-gradient(to right, #d51c39, #c514a6, #8052ec);
+    background-origin: border-box;
+    /*border-radius: 20px;*/
+}
+
+#new-task a {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #d51c39, #c514a6);
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    height: 40px;
+    border-radius: 7px;
+    color: #fff;
+}
+
+#new-task a:hover {
+    opacity: .8;
+}
+
+#tasks {
+    background-image: linear-gradient(to right, #efefef, #ededed);
+    padding: .2rem 1rem;
+    border-radius: 10px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.text {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 18px;
+    color: #555;
+    border-bottom: 1px solid #888;
+    height: 33px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.delete {
+    width: 28%;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #d51c39;
+    color: #d51c39;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete:hover {
+    border: 1px solid transparent;
+    background-color: #d51c39;
+    color: #fff;
+}
+
+.task-completed {
+    color: rgba(0, 0, 0, 0.47);
+    text-decoration: line-through;
+}
